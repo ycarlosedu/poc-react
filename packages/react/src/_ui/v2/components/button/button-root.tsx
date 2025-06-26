@@ -1,5 +1,3 @@
-export function ButtonRoot() {
-  return (
-    <button type="button">Button</button>
-  )
+export function ButtonRoot(props: React.ComponentProps<'button'>) {
+	return <button {...props} />;
 }

@@ -1,14 +1,32 @@
 {
-  "name": "@repo/react",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "lint": "biome check --write ./src"
-  },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "tailwind-merge": "^3.3.1",
-    "tailwind-variants": "^1.0.0"
-  }
+	"name": "@repo/react",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tsup --watch",
+		"build": "tsup",
+		"lint": "biome check --write ."
+	},
+	"exports": {
+	  "./v2/components/*": {
+			"types": "./dist/v2/components/*.d.ts",
+			"import": "./dist/v2/components/*.mjs",
+			"require": "./dist/v2/components/*.js"
+		},
+	 "./v2/blocks/*": {
+		"types": "./dist/v2/blocks/*.d.ts",
+		"import": "./dist/v2/blocks/*.mjs",
+		"require": "./dist/v2/blocks/*.js"
+	}
+	},
+	"dependencies": {
+		"clsx": "^2.1.1",
+		"tailwind-merge": "^3.3.1",
+		"tailwind-variants": "^1.0.0"
+	},
+	"devDependencies": {
+	  "react": "18.3.1",
+		"@types/react": "18.3.12"
+	}
 }
