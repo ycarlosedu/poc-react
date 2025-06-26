@@ -12,11 +12,11 @@ export default defineConfig(async () => {
 
   const resolvedMap: Record<UIPackageType, string[]> = Object.fromEntries(
     await Promise.all(
-      PACKAGE_TYPES.map(async (type) => {
+      PACKAGE_TYPES.map(async type => {
         const packageDir = path.resolve(UI_V2_DIR, type)
         const folders = await fs.readdir(packageDir)
 
-        const files = folders.map((folder) =>
+        const files = folders.map(folder =>
           path.resolve(packageDir, path.join(folder, `${folder}.ts`))
         )
 
@@ -25,11 +25,11 @@ export default defineConfig(async () => {
     )
   )
 
-  return PACKAGE_TYPES.map((type) => ({
+  return PACKAGE_TYPES.map(type => ({
     entry: resolvedMap[type],
     format: ['esm', 'cjs'],
     external: ['react'],
     dts: true,
-    outDir: `dist/v2/${type}`
+    outDir: `dist/v2/${type}`,
   }))
 })

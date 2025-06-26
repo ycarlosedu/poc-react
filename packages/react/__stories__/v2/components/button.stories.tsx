@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
+import type { Meta, StoryObj } from '@storybook/react-vite'
 
-import * as Button from "@/_ui/v2/components/button/button";
+import * as Button from '@/_ui/v2/components/button/button'
 
 export default {
-	title: "Version 2/Components/Button",
-	component: Button.Root,
-	args: {
-		children: "Button",
-	},
-} satisfies Meta;
+  title: 'Version 2/Components/Button',
+  component: Button.Root,
+  args: {
+    children: 'Button',
+  },
+} satisfies Meta
 
-type ButtonStory = StoryObj;
+type ButtonStory = StoryObj
 
-export const Basic: ButtonStory = {};
+export const Basic: ButtonStory = {}

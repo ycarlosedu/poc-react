@@ -1,1 +1,1 @@
-export { ButtonRoot as Root } from "./button-root";
+export { ButtonRoot as Root } from './button-root'
