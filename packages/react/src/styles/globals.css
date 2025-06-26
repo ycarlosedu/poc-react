@@ -1,0 +1,10 @@
+@import "tailwindcss" prefix(pulso);
+
+@import "@raiadrogasil/pulso-design-tokens/rdsaudesistemas.css";
+@import "@raiadrogasil/pulso-design-tokens/drogasil.css";
+@import "@raiadrogasil/pulso-design-tokens/raia.css";
+@import "@raiadrogasil/pulso-design-tokens/subscription.css";
+@import "@raiadrogasil/pulso-design-tokens/prime.css";
+@import "@raiadrogasil/pulso-design-tokens/globals.css"
+
+/* Add theme with base the automation */

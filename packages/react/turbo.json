@@ -1,0 +1,25 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["build:styles", "build:ui"]
+    },
+    "build:styles": {
+      "outputs": ["dist/**"]
+    },
+    "build:ui": {
+      "outputs": ["dist/**"]
+    },
+    "dev": {
+      "with": ["dev:styles", "dev:ui"]
+    },
+    "dev:styles": {
+      "cache": false,
+      "persistent": true
+    },
+    "dev:ui": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
