@@ -1,0 +1,22 @@
+{
+  "name": "storybook-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
+    "lint": "biome check --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^4.0.1",
+    "@storybook/addon-docs": "^9.0.13",
+    "@vitejs/plugin-react": "4.6.0",
+    "storybook": "^9.0.13",
+    "vite": "7.0.0"
+  }
+}

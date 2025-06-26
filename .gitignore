@@ -1,0 +1,8 @@
+node_modules/
+dist/
+
+# Turborepo
+.turbo
+
+*storybook.log
+storybook-static
