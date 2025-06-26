@@ -3,13 +3,10 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "sideEffects": [
-    "**/*.css"
-  ],
+  "sideEffects": ["**/*.css"],
   "scripts": {
     "dev:ui": "tsup --watch",
     "dev:styles": "tailwindcss -i ./src/styles/globals.css -o ./dist/v2/index.css --watch",
-    "build": "run-p build:*",
     "build:ui": "tsup",
     "build:styles": "tailwindcss -i ./src/styles/globals.css -o ./dist/v2/index.css",
     "lint": "biome check --write ."
@@ -41,10 +38,13 @@
     "@raiadrogasil/pulso-design-tokens": "2.0.0",
     "clsx": "^2.1.1",
     "tailwind-merge": "^3.3.1",
-    "tailwind-variants": "^1.0.0"
+    "tailwind-variants": "^1.0.0",
+    "@repo/react-legacy": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "18.3.12",
-    "react": "18.3.1"
+    "react": "18.3.1",
+    "@tailwindcss/cli": "4.1.11",
+    "tailwindcss": "4.1.11"
   }
 }

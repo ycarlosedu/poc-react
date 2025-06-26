@@ -4,7 +4,7 @@
   "packageManager": "pnpm@10.3.0",
   "type": "module",
   "scripts": {
-    "dev": "turbo dev --filter=@repo/react --filter=@repo/storybook-react",
+    "dev": "turbo dev --filter=@repo/react --filter=@repo/react-legacy --filter=@repo/storybook-react",
     "lint": "turbo lint"
   },
   "private": true,
@@ -12,10 +12,7 @@
     "@biomejs/biome": "1.8.3",
     "@repo/react": "workspace:*",
     "@storybook/react-vite": "^9.0.13",
-    "@tailwindcss/cli": "4.1.11",
-    "@tailwindcss/vite": "4.1.11",
     "@types/node": "24.0.4",
-    "tailwindcss": "4.1.11",
     "tsup": "8.5.0",
     "turbo": "2.5.4",
     "typescript": "^5"
