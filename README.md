@@ -7,3 +7,4 @@
 - [ ] Testar a convivência das duas versões do TailwindCSS (v3 e v4)
 - [ ] Verificar o Biome com TailwindCSS v4
 - [ ] Verificar o generator
+- [ ] Corrigir a lógica do tsup do pacote @repo/react

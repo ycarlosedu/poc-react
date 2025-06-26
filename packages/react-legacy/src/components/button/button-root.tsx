@@ -28,6 +28,10 @@ export type ButtonRootProps = Assign<
   full?: boolean
 }
 
+/**
+ * @deprecated Este componente foi substituído.
+ * Por favor, importe de "@repo/react/v2/components/button"
+ */
 export function ButtonRoot({
   children,
   className,

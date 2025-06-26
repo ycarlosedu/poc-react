@@ -1,5 +1,23 @@
+import "@repo/react/styles.css"
+
+import * as Header from "@repo/react/v2/blocks/header"
+import * as Button from "@repo/react/v2/components/button"
+import { Button as Btn } from "@repo/react"
+
 export function App() {
   return (
-    <div></div>
+    <div>
+      <Button.Root>
+        Button
+      </Button.Root>
+
+      <Btn.Root variant="neutral-secondary">
+        Button
+      </Btn.Root>
+
+      <Header.Root>
+
+      </Header.Root>
+    </div>
   )
 }

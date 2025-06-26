@@ -7,6 +7,7 @@ type UIPackageType = 'components' | 'blocks'
 
 const PACKAGE_TYPES: UIPackageType[] = ['components', 'blocks']
 
+// @ts-expect-error
 export default defineConfig(async () => {
   const UI_V2_DIR = path.resolve(import.meta.dirname, 'src/_ui/v2')
 
@@ -25,11 +26,19 @@ export default defineConfig(async () => {
     )
   )
 
-  return PACKAGE_TYPES.map(type => ({
-    entry: resolvedMap[type],
-    format: ['esm', 'cjs'],
-    external: ['react'],
-    dts: true,
-    outDir: `dist/v2/${type}`,
-  }))
+  return [
+    ...PACKAGE_TYPES.map(type => ({
+      entry: resolvedMap[type],
+      format: ['esm', 'cjs'],
+      external: ['react'],
+      dts: true,
+      outDir: `dist/v2/${type}`,
+    })).concat(),
+    {
+      entry: ['./src/_ui/legacy.ts'],
+      format: ['esm', 'cjs'],
+      external: ['react'],
+      dts: true,
+    }
+  ]
 })
