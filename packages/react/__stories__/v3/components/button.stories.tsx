@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
+import { within, userEvent } from 'storybook/test'
 
 import * as Button from '@/_ui/v3/components/button/button'
 
@@ -12,4 +13,9 @@ export default {
 
 type ButtonStory = StoryObj
 
-export const Basic: ButtonStory = {}
+export const Basic: ButtonStory = {
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    await userEvent.click(canvas.getByRole('button'));
+  }
+}

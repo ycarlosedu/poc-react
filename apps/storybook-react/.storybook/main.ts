@@ -14,7 +14,6 @@ const config: StorybookConfig = {
     '../../../packages/react-legacy/__stories__/**/*.stories.@(js|jsx|mjs|ts|tsx)',
   ],
   addons: [
-    getAbsolutePath('@chromatic-com/storybook'),
     getAbsolutePath('@storybook/addon-docs'),
   ],
   framework: {
