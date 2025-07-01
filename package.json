@@ -6,11 +6,15 @@
   "scripts": {
     "dev": "turbo dev --filter=@repo/react --filter=@repo/react-legacy --filter=@repo/storybook-react",
     "lint": "turbo lint",
-    "prepare": "husky"
+    "release": "changeset",
+    "publish-release": "changeset version",
+    "husky:prepare": "husky"
   },
   "private": true,
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
+    "@changesets/changelog-git": "0.2.1",
+    "@changesets/cli": "2.29.5",
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-conventional": "19.8.1",
     "@repo/react": "workspace:*",
@@ -20,7 +24,6 @@
     "husky": "9.1.7",
     "tsup": "8.5.0",
     "turbo": "2.5.4",
-    "typescript": "^5",
-    "@turbo/gen": "2.5.4"
+    "typescript": "^5"
   }
 }

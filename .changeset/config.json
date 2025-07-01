@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@3.0.2/schema.json",
+  "changelog": [
+    "@changesets/changelog-git",
+    {
+      "commit": true,
+      "customCommit": "{commitMessage} ({commitHash})"
+    }
+  ],
+  "fixed": [],
+  "linked": [],
+  "access": "restricted",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "ignore": ["@repo/storybook-react", "@repo/example"]
+}

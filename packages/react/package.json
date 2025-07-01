@@ -1,9 +1,11 @@
 {
   "name": "@repo/react",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
-  "sideEffects": ["**/*.css"],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "dev:ui": "tsup --watch",
     "dev:styles": "tailwindcss -i ./src/styles/globals.css -o ./dist/v3/index.css --watch",
