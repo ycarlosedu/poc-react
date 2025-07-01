@@ -45,6 +45,16 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         path: 'src/_ui/v3/{{ folder }}/{{ dashCase component }}/{{ dashCase component }}.styles.ts',
         templateFile: 'templates/component/styles.hbs',
       },
+      {
+        type: 'add',
+        path: 'src/_ui/v3/{{ folder }}/{{ dashCase component }}/{{ dashCase component }}.ts',
+        templateFile: 'templates/component/component.hbs',
+      },
+      {
+        type: 'add',
+        path: '__stories__/v3/{{ folder }}/{{ dashCase component }}.stories.tsx',
+        templateFile: 'templates/component/stories.hbs',
+      },
     ],
   })
 }

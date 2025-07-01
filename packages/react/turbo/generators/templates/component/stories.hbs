@@ -1,0 +1,16 @@
+import type { Meta, StoryObj } from '@storybook/react-vite'
+
+import * as {{pascalCase component}} from '@/_ui/v3/{{folder}}/{{dashCase component}}/{{dashCase component}}'
+
+export default {
+  title: 'Version 3/{{pascalCase folder}}/{{pascalCase component}}',
+  component: {{pascalCase component}}.Root,
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
+} satisfies Meta
+
+type {{pascalCase component}}Story = StoryObj
+
+export const Basic: {{pascalCase component}}Story = {}
