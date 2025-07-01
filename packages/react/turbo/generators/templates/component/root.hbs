@@ -1,0 +1,12 @@
+// Acesse a documentação do Ark UI para verificar se existe componente existe na biblioteca headless.
+// https://ark-ui.com
+import { cn } from "@/utilities/cn";
+import { rootStyles } from "./{{dashCase component}}.styles";
+
+export function {{pascalCase component}}() {
+  return (
+    <div className={cn(rootStyles())}>
+      <h1>{{component}}</h1>
+    </div>
+  );
+}
