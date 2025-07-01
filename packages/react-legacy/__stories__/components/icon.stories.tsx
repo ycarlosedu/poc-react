@@ -7,7 +7,7 @@ import { Icon, type IconProps } from '~/components/icon'
 import { ThemeProvider } from '~/components/theme-provider'
 
 export default {
-  title: 'Legacy/Components/Icon',
+  title: 'Version 2/Components/Icon',
   argTypes: {
     symbol: {
       description: 'Nome do ícone a ser renderizado.',

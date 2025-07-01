@@ -3,12 +3,14 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "sideEffects": ["**/*.css"],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "dev:ui": "tsup --watch",
-    "dev:styles": "tailwindcss -i ./src/styles/globals.css -o ./dist/v2/index.css --watch",
+    "dev:styles": "tailwindcss -i ./src/styles/globals.css -o ./dist/v3/index.css --watch",
     "build:ui": "tsup",
-    "build:styles": "tailwindcss -i ./src/styles/globals.css -o ./dist/v2/index.css",
+    "build:styles": "tailwindcss -i ./src/styles/globals.css -o ./dist/v3/index.css",
     "lint": "biome check --write ."
   },
   "exports": {
@@ -17,23 +19,24 @@
       "import": "./dist/legacy.mjs",
       "require": "./dist/legacy.js"
     },
-    "./v2/components/*": {
-      "types": "./dist/v2/components/*.d.ts",
-      "import": "./dist/v2/components/*.mjs",
-      "require": "./dist/v2/components/*.js"
+    "./v3/components/*": {
+      "types": "./dist/v3/components/*.d.ts",
+      "import": "./dist/v3/components/*.mjs",
+      "require": "./dist/v3/components/*.js"
     },
-    "./v2/blocks/*": {
-      "types": "./dist/v2/blocks/*.d.ts",
-      "import": "./dist/v2/blocks/*.mjs",
-      "require": "./dist/v2/blocks/*.js"
+    "./v3/blocks/*": {
+      "types": "./dist/v3/blocks/*.d.ts",
+      "import": "./dist/v3/blocks/*.mjs",
+      "require": "./dist/v3/blocks/*.js"
     },
-    "./styles.css": "./dist/v2/index.css"
+    "./styles.css": "./dist/v3/index.css"
   },
   "dependencies": {
     "@raiadrogasil/pulso-design-tokens": "2.0.0",
     "clsx": "^2.1.1",
     "tailwind-merge": "^3.3.1",
-    "tailwind-variants": "^1.0.0"
+    "tailwind-variants": "^1.0.0",
+    "@repo/react-legacy": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "18.3.12",

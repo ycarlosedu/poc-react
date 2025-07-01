@@ -21,7 +21,7 @@ const themes = [
 ] as const
 
 export default {
-  title: 'Legacy/Components/Button',
+  title: 'Version 2/Components/Button',
   args: {
     label: 'Label',
     variant: 'brand-primary',

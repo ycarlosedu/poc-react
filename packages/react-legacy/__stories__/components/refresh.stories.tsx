@@ -4,7 +4,7 @@ import { Refresh, type RefreshProps } from '~/components/refresh'
 import { ThemeProvider } from '~/components/theme-provider'
 
 export default {
-  title: 'Legacy/Components/Refresh',
+  title: 'Version 2/Components/Refresh',
   argTypes: {
     color: {
       description: 'Define a cor visual do ícone com base no tema.',
