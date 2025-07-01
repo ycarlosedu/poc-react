@@ -5,14 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "turbo dev --filter=@repo/react --filter=@repo/react-legacy --filter=@repo/storybook-react",
-    "lint": "turbo lint"
+    "lint": "turbo lint",
+    "prepare": "husky"
   },
   "private": true,
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
     "@repo/react": "workspace:*",
     "@storybook/react-vite": "^9.0.13",
+    "@turbo/gen": "2.5.4",
     "@types/node": "24.0.4",
+    "husky": "9.1.7",
     "tsup": "8.5.0",
     "turbo": "2.5.4",
     "typescript": "^5"

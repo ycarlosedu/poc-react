@@ -1,12 +1,12 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
+import type { Meta, StoryObj } from '@storybook/react-vite'
 
-import * as Header from "@/_ui/v3/blocks/header/header";
+import * as Header from '@/_ui/v3/blocks/header/header'
 
 export default {
-  title: "Version 3/Blocks/Header",
+  title: 'Version 3/Blocks/Header',
   component: Header.Root,
-} satisfies Meta;
+} satisfies Meta
 
-type HeaderStory = StoryObj;
+type HeaderStory = StoryObj
 
-export const Basic: HeaderStory = {};
+export const Basic: HeaderStory = {}

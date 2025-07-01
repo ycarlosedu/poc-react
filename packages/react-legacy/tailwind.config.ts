@@ -3,7 +3,7 @@ import type { Config } from 'tailwindcss'
 export default {
   content: ['./src/**/*.{tsx,ts}'],
   corePlugins: {
-    preflight: false
+    preflight: false,
   },
   theme: {
     extend: {

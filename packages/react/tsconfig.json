@@ -7,6 +7,6 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src", "__stories__"],
+  "include": ["src", "__stories__", "turbo"],
   "exclude": ["node_modules", "dist"]
 }

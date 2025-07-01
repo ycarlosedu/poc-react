@@ -25,7 +25,7 @@ export default {
   },
   decorators: [
     Story => (
-      <ThemeProvider theme='rdsaudesistemas'>
+      <ThemeProvider theme="rdsaudesistemas">
         <Story />
       </ThemeProvider>
     ),
