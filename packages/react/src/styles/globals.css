@@ -7,6 +7,6 @@
 @import "@raiadrogasil/pulso-design-tokens/prime.css";
 @import "@raiadrogasil/pulso-design-tokens/globals.css";
 
-@import "../../../react-legacy/dist/output.css";
+@import "../../../react-legacy/src/styles/input.css";
 
 /* Add theme with base the automation */
