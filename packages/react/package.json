@@ -33,8 +33,7 @@
     "@raiadrogasil/pulso-design-tokens": "2.0.0",
     "clsx": "^2.1.1",
     "tailwind-merge": "^3.3.1",
-    "tailwind-variants": "^1.0.0",
-    "@repo/react-legacy": "workspace:*"
+    "tailwind-variants": "^1.0.0"
   },
   "devDependencies": {
     "@types/react": "18.3.12",
