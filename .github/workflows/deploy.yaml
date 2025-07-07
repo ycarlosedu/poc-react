@@ -25,5 +25,5 @@ jobs:
         with:
           install_command: pnpm install
           build_command: pnpm build
-          path: /apps/storybook-react/storybook-static
+          path: ./apps/storybook-react/storybook-static
           checkout: false
