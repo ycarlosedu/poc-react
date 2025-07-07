@@ -12,9 +12,6 @@
     "husky:prepare": "husky"
   },
   "private": true,
-  "dependencies": {
-    "@repo/react-legacy": "workspace:*"
-  },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@changesets/changelog-git": "0.2.1",

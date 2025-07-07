@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev:ui": "tsup --watch",
-    "dev:styles": "tailwindcss -i ./src/styles/input.css -o ./dist/output.css --watch",
-    "build:styles": "tailwindcss -i ./src/styles/input.css -o ./dist/output.css",
+    "dev:styles": "tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch",
+    "build:styles": "tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css",
     "build:ui": "tsup",
     "lint": "biome check --write ."
   },
@@ -21,7 +21,7 @@
       "require": "./dist/components/*/index.cjs",
       "import": "./dist/components/*/index.js"
     },
-    "./styles.css": "./dist/output.css"
+    "./styles.css": "./src/styles/output.css"
   },
   "keywords": [],
   "author": "",
