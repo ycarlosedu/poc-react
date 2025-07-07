@@ -18,6 +18,7 @@ const config: StorybookConfig = {
     name: getAbsolutePath('@storybook/react-vite'),
     options: {},
   },
+  staticDirs: ['../public'],
   previewHead: head => {
     const basePath = process.env.STORYBOOK_ENV === 'production' ? './' : '/'
 
