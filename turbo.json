@@ -9,6 +9,10 @@
       "dependsOn": ["^dev"],
       "outputs": ["dist"],
       "cache": false
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", "storybook-static/**"]
     }
   }
 }
