@@ -2,13 +2,15 @@
   "extends": ["//"],
   "tasks": {
     "build": {
-      "dependsOn": ["^build:styles", "^build:ui"]
+      "dependsOn": ["build:styles", "build:ui"]
     },
     "build:styles": {
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**"],
+      "dependsOn": ["@repo/react-legacy#build-legacy:styles"]
     },
     "build:ui": {
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**"],
+      "dependsOn": ["@repo/react-legacy#build-legacy:ui"]
     },
     "dev": {
       "with": ["dev:styles", "dev:ui"]
