@@ -10,3 +10,4 @@
 - [ ] Corrigir a lógica do tsup do pacote @repo/react
 - [ ] Criar documentação
 - [ ] Criar testes automatizados
+- [ ] Corrigir como as fontes são carregadas no storybook

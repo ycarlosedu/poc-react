@@ -20,14 +20,15 @@ const config: StorybookConfig = {
   },
   staticDirs: ['../public'],
   previewHead: head => {
-    const basePath = process.env.STORYBOOK_ENV === 'production' ? './' : '/'
+    const basePath =
+      process.env.STORYBOOK_ENV === 'production' ? './poc-react' : '/'
 
     return `
         ${head}
         <script>
           const basePath = '${basePath}';
 
-          document.write('<link rel="stylesheet" href="' + basePath + 'RD-Sans-Symbols.css">');
+          document.write('<link rel="stylesheet" href="' + basePath + '/pulsodesignsystem/style.css" type="text/css" />');
           document.write(\`
             <style>
               @font-face {
