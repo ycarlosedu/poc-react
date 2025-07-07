@@ -4,7 +4,8 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "~/*": ["../react-legacy/src/*"]
     }
   },
   "include": ["src", "__stories__", "turbo"],

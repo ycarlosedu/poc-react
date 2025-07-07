@@ -1,4 +1,4 @@
 // Deprecated
-export * from '@repo/react-legacy/button'
-export * from '@repo/react-legacy/refresh'
-export * from '@repo/react-legacy/icon'
+export * from '../../../react-legacy/src/components/button'
+export * from '../../../react-legacy/src/components/refresh'
+export * from '../../../react-legacy/src/components/icon'
